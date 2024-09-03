@@ -31,6 +31,7 @@
     align-items: center;
     flex-grow: 1;
     padding: 88px 24px;
+    width: 100%;
 }
 .card{
     display: flex;
@@ -121,4 +122,21 @@
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
+}
+@media(min-width: 968px){
+    .main__container{
+        flex-direction: row;
+    }
+    .card{
+        max-width: 307px;
+    }
+    .card-start{
+        border-radius: 8px 0 0 8px;
+    }
+    .card-end{
+        border-radius: 0 8px 8px 0;
+    }
+    .card--text{
+        margin-bottom: 83px;
+    }
 }
